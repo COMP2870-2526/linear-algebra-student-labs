@@ -7511,13 +7511,51 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c509c383-690c-471a-aabf-4bbc21632c23">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0aee255e-101e-44dc-bae5-4b17f92cb321">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lab03:-Linear-systems-of-equations">Lab03: Linear systems of equations<a class="anchor-link" href="#Lab03:-Linear-systems-of-equations">¶</a></h1>
+<h1 id="Theoretical-Foundations-of-Computer-Science-II-COMP2870">Theoretical Foundations of Computer Science II COMP2870<a class="anchor-link" href="#Theoretical-Foundations-of-Computer-Science-II-COMP2870">¶</a></h1><p><strong>School of Computer Science, University of Leeds</strong></p>
+<h1 id="Lab03:-Linear-systems-of-equations">Lab03: Linear systems of equations<a class="anchor-link" href="#Lab03:-Linear-systems-of-equations">¶</a></h1><p>These labsheets contains <em>formative activities</em> (which contribute to your learning) and <em>summative activities</em> (which you will complete and submit to be assessed as part of your portfolio).</p>
+<div class="alert alert-block alert-danger">
+<b>Portfolio exercise</b>
+<p>Exercise marked with a red box is a summative exercise and must be submitted as part of your portfolio. You should use Gradescope to submit portfolio activities.</p>
+</div>
+<h3 id="Expectations">Expectations<a class="anchor-link" href="#Expectations">¶</a></h3><ol>
+<li><p><strong>Timeliness</strong> You should complete all of the activities in the order provided and submit your portfolio evidence on Gradescope before the completion date (Friday 14 November, 5pm).</p>
+</li>
+<li><p><strong>Presentation</strong> You should present all of your work clearly and concisely following additional guidance below.</p>
+</li>
+<li><p><strong>Integrity</strong> You are responsible for ensuring that all the evidence you submit as part of your portfolio is entirely your own work. You can find out more about Academic integrity on the Skill@library website. All work you submit for assessment is subject to the academic integrity policy.</p>
+</li>
+</ol>
+<h3 id="Feedback">Feedback<a class="anchor-link" href="#Feedback">¶</a></h3><p>Feedback on formative activities will be provided via lab classess and tutorials. Feedback on evidence submitted as part of the portfolio will be available on Gradescope.</p>
+<h3 id="Support-opportunities">Support opportunities<a class="anchor-link" href="#Support-opportunities">¶</a></h3><p>Support with the activity sheet is available in the lab classes and tutorials. Individual support is available via the online booking system.</p>
+<h3 id="Statement-on-the-Use-of-Generative-AI-(Red-Category)">Statement on the Use of Generative AI (Red Category)<a class="anchor-link" href="#Statement-on-the-Use-of-Generative-AI-(Red-Category)">¶</a></h3><p>This assessment is RED according to the GenAI traffice light system. <strong>Generative AI (GenAI) tools cannot be used</strong>. The aim of this task is for you to develop and demonstrate the specific skills and knowledge covered in the taught sessions. We want you to independently develop your understanding, criticical thinking skills and demonstrate fundamental skills that will be required throughout your programme. Reliance on GenAI could prevent you from achieving the intended learning outcomes and may impeded your skill development.</p>
+<p>You are still permitted to use dictionaries, thesauri, spelling and grammer-checking software to help identify and correct spelling mistakes and grammatrical errors (even if they are powered by GenAI). However, you should not use any software to rewrite sentence or make substantial changes to your original text, as this would be against the rules of this category.</p>
+<p>Failure to comply with these requirements may be considered academic misconduct under University regulations.</p>
+<h3 id="Expected-time-for-completion:">Expected time for completion:<a class="anchor-link" href="#Expected-time-for-completion:">¶</a></h3><p>1-2 hours</p>
+<h3 id="Expected-completion-date:">Expected completion date:<a class="anchor-link" href="#Expected-completion-date:">¶</a></h3><p>Friday 14 November, 5pm</p>
+<h2 id="Coursework-summary">Coursework summary<a class="anchor-link" href="#Coursework-summary">¶</a></h2><p>This lab covers material on how to solve systems of linear equations.</p>
+<h2 id="Learning-outcomes">Learning outcomes<a class="anchor-link" href="#Learning-outcomes">¶</a></h2><p>On completion of this activity sheet you will have demonstrated that you can:</p>
+<ul>
+<li>apply direct and iterative solvers to solve systems of linear equations; implement methods using floating point numbers and investigate computational cost using computer experiments</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=147a7e12-b3ef-4d27-bdd4-5317430f3246">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="How-to-access-the-lab">How to access the lab<a class="anchor-link" href="#How-to-access-the-lab">¶</a></h2><p>TODO: add link or instructions.</p>
+<p>Recall how to set everything up with github code spaces.</p>
+<p>These lab worksheets are written using <a href="https://jupyter.org/">'Jupyter Notebooks'</a>. Many, many tutorials and guides are <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">available online</a>.</p>
 </div>
 </div>
 </div>
@@ -7543,33 +7581,54 @@ a.anchor-link {
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.sparse</span><span class="w"> </span><span class="kn">import</span> <span class="n">diags</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">generate_safe_system</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_safe_system</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Generate a linear system A x = b where A is strictly diagonally dominant,</span>
 <span class="sd">    ensuring LU factorization without pivoting will work.</span>
-<span class="sd">    </span>
+
 <span class="sd">    Parameters:</span>
 <span class="sd">        n (int): Size of the system (n x n)</span>
-<span class="sd">    </span>
+
 <span class="sd">    Returns:</span>
 <span class="sd">        A (ndarray): n x n strictly diagonally dominant matrix</span>
 <span class="sd">        b (ndarray): RHS vector</span>
 <span class="sd">        x_true (ndarray): The true solution vector</span>
 <span class="sd">    """</span>
-    
-    <span class="n">k</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
-    <span class="n">offset</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">A</span> <span class="o">=</span> <span class="n">diags</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">offset</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+
+    <span class="n">k</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
+    <span class="n">offset</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">diags</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">offset</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
 
     <span class="c1"># Solution is always all ones</span>
     <span class="n">x_true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-    
+
     <span class="c1"># Compute b = A @ x_true</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">x_true</span>
-    
+
     <span class="k">return</span> <span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x_true</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=16ff3858-c23c-4d1f-96bc-1fbf6715c178">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Exercise-1:-LU-factorisation">Exercise 1: LU factorisation<a class="anchor-link" href="#Exercise-1:-LU-factorisation">¶</a></h2><div class="alert alert-block alert-danger">
+<b>Portfolio exercise</b>
+You should submit:
+
+<ol>
+<li>Your code for <code>lu_factorisation</code></li>
+<li>The determinant of <code>A_large</code> from Exercise 1.3.</li>
+<li>The plot of run times for LU factorisation (your code) and Gaussian elimination (from the notes)</li></ol></div>
+
+
 </div>
 </div>
 </div>
@@ -7580,7 +7639,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exercise-1:-LU-factorisation">Exercise 1: LU factorisation<a class="anchor-link" href="#Exercise-1:-LU-factorisation">¶</a></h2><ol>
+<ol>
 <li><p>Implement the algorithm for LU factorisation as described <a href="https://comp2870-2526.github.io/linear-algebra-notes/src/lec04.html#sec-LU-factorisation">in the
 notes</a>.
 You should implement a Python function which accepts an $n \times n$
@@ -7631,8 +7690,10 @@ matrix $L$ and one upper triangular matrix $U$ with $A = LU$.</p>
 
     <span class="c1"># construct arrays of zeros</span>
     <span class="n">L</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-    
+
     <span class="c1"># ...</span>
+    <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">U</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
@@ -7724,7 +7785,7 @@ We can use the fact that we can easily compute the determinant of triangular mat
 
     <span class="n">det_L</span> <span class="o">=</span> <span class="mf">1.0</span>
     <span class="n">det_U</span> <span class="o">=</span> <span class="mf">1.0</span>
-    
+
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
         <span class="n">det_L</span> <span class="o">*=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span>
         <span class="n">det_U</span> <span class="o">*=</span> <span class="n">U</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span>
@@ -7736,32 +7797,25 @@ We can use the fact that we can easily compute the determinant of triangular mat
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0a9116cc-d2c2-463a-aefc-1431aa363390">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=69ef62fc-f1be-4d23-9e0e-88e883cc01e5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exercise-2:-Timing-LU-factorisation">Exercise 2: Timing LU factorisation<a class="anchor-link" href="#Exercise-2:-Timing-LU-factorisation">¶</a></h2><p>Combine your implementation of LU factorisation with the forwards and
+<ol start="4">
+<li><p>Combine your implementation of LU factorisation with the forwards and
 backwards solve from the lecture notes to create a solver for a system
 of linear equations. Compare how long it takes for each part of your
 code to run against the code for Gaussian elimination from the lecture
-notes. Describe what you find.</p>
+notes.</p>
+<p>Use the following code as a starter:</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4cea340f-a68a-4194-8fa5-6270731ebd9c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Use the following code to help generate the test cases:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=56a82bc4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9a209491-3823-4b6c-a791-93b545e66c1c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7774,44 +7828,9 @@ notes. Describe what you find.</p>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">sizes</span><span class="p">:</span>
     <span class="c1"># generate a random system of linear equations of size n</span>
     <span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">generate_safe_system</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    
+
     <span class="c1"># do the solve</span>
     <span class="o">...</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eb90b58d-67bf-4289-b6e8-f5003d16270b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="alert alert-block alert-danger">
-<b>Portfolio exercise</b>
-You should submit:
-
-<ol>
-<li>Your code for <code>lu_factorisation</code></li>
-<li>The determinant of <code>A_large</code> from Exercise 1.3.</li>
-<li>The plot of run times for LU factorisation (your code) and Gaussian elimination (from the notes)</li>
-<li>A comment on the differences between the run times.</li></ol></div>
-
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=20c0c7b0-aa0c-490e-b978-af8d7d98f307">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -7824,7 +7843,7 @@ You should submit:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exercise-3:-LU-factorisation-with-pivoting-(Extension)">Exercise 3: LU factorisation with pivoting (Extension)<a class="anchor-link" href="#Exercise-3:-LU-factorisation-with-pivoting-(Extension)">¶</a></h2><p>We can improve the stability of LU factorisation by additionally
+<h2 id="Exercise-2:-LU-factorisation-with-pivoting-(Extension)">Exercise 2: LU factorisation with pivoting (Extension)<a class="anchor-link" href="#Exercise-2:-LU-factorisation-with-pivoting-(Extension)">¶</a></h2><p>We can improve the stability of LU factorisation by additionally
 including a pivoting step.</p>
 <p>The new algorithm looks like:</p>
 <p>TODO! update algorithm steps here</p>
@@ -7858,20 +7877,6 @@ $$ Test with $\varepsilon = 10^{-14}$.</p>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=76720ff7-e944-40eb-ac15-7c6b4305994a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=db6f2846-2a75-4ee1-94b4-811d59f1b8fd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
