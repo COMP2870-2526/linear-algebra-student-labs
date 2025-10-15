@@ -7547,14 +7547,13 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=147a7e12-b3ef-4d27-bdd4-5317430f3246">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=efca77e2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="How-to-access-the-lab">How to access the lab<a class="anchor-link" href="#How-to-access-the-lab">¶</a></h2><p>TODO: add link or instructions.</p>
-<p>Recall how to set everything up with github code spaces.</p>
+<h2 id="How-to-access-the-lab">How to access the lab<a class="anchor-link" href="#How-to-access-the-lab">¶</a></h2><p>You can access the lab worksheet directly through <a href="https://minerva.leeds.ac.uk/">minerva</a>, <a href="https://github.com/COMP2870-2526/linear-algebra-student-labs">github</a> or using Noteable (accessible via Minerva - see <code>README.md</code> for detailed instructions).</p>
 <p>These lab worksheets are written using <a href="https://jupyter.org/">'Jupyter Notebooks'</a>. Many, many tutorials and guides are <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">available online</a>.</p>
 </div>
 </div>
@@ -7707,12 +7706,13 @@ matrix $L$ and one upper triangular matrix $U$ with $A = LU$.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol start="2">
-<li>Test your solution on the matrix $A$: $$
+<li>Test your solution on the matrix $A$:
+$$
 A = \begin{pmatrix}
 4 &amp; 2 &amp; 0 \\ 2 &amp; 3 &amp; 1 \\ 0 &amp; 1 &amp; 2.5
 \end{pmatrix}.
-$$ First compute the LU factorisation by hand and then
-check $A = L U$.</li>
+$$
+First compute the LU factorisation by hand and then check $A = L U$.</li>
 </ol>
 </div>
 </div>
@@ -7844,9 +7844,11 @@ notes.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Exercise-2:-LU-factorisation-with-pivoting-(Extension)">Exercise 2: LU factorisation with pivoting (Extension)<a class="anchor-link" href="#Exercise-2:-LU-factorisation-with-pivoting-(Extension)">¶</a></h2><p>We can improve the stability of LU factorisation by additionally
-including a pivoting step.</p>
+including a pivoting step. In this way, we compute a factorisation:
+$$
+P A = L U.
+$$</p>
 <p>The new algorithm looks like:</p>
-<p>TODO! update algorithm steps here</p>
 <ol>
 <li><p>Initialise $P = I_n$ (the $n \times n$ identity), $L = O_n$ (the
 $n \times n$ zero matrix) and $U = O_n$.</p>
@@ -7862,7 +7864,8 @@ swap in $P$.</li>
 </li>
 </ol>
 <p>Implement this new method and test on the system of linear equations
-given by: $$
+given by:
+$$
 \begin{pmatrix}
 10 &amp; -7 &amp; 0 \\ -3 &amp; 2.1 - \varepsilon &amp; 6 \\ 5 &amp; -1 &amp; 5
 \end{pmatrix}
@@ -7872,7 +7875,8 @@ x_1 \\ x_2 \\x_3
 = \begin{pmatrix}
 7 \\ 9.9 + \varepsilon \\ 11
 \end{pmatrix}.
-$$ Test with $\varepsilon = 10^{-14}$.</p>
+$$
+Test with $\varepsilon = 10^{-14}$.</p>
 </div>
 </div>
 </div>

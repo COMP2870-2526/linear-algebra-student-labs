@@ -7547,14 +7547,13 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c111398-866d-45c9-b9e1-772eda8f92b2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4ea8e20b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="How-to-access-the-lab">How to access the lab<a class="anchor-link" href="#How-to-access-the-lab">¶</a></h2><p>TODO: add link or instructions.</p>
-<p>Recall how to set everything up with github code spaces.</p>
+<h2 id="How-to-access-the-lab">How to access the lab<a class="anchor-link" href="#How-to-access-the-lab">¶</a></h2><p>You can access the lab worksheet directly through <a href="https://minerva.leeds.ac.uk/">minerva</a>, <a href="https://github.com/COMP2870-2526/linear-algebra-student-labs">github</a> or using Noteable (accessible via Minerva - see <code>README.md</code> for detailed instructions).</p>
 <p>These lab worksheets are written using <a href="https://jupyter.org/">'Jupyter Notebooks'</a>. Many, many tutorials and guides are <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">available online</a>.</p>
 </div>
 </div>
@@ -7608,7 +7607,8 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Exercise-2:">Exercise 2:<a class="anchor-link" href="#Exercise-2:">¶</a></h2><p>Given an algorithm which gives <em>computed answer</em> as an approximation to
-an <em>exact answer</em>, we define two errors: $$
+an <em>exact answer</em>, we define two errors:
+$$
 \begin{aligned}
 \text{Absolute error} &amp; = |\text{computer answer} - \text{exact answer}| \\
 \text{Relative error} &amp; = \frac{|\text{computer answer} - \text{exact answer}|}{| \text{exact answer}|}.
@@ -7616,11 +7616,14 @@ an <em>exact answer</em>, we define two errors: $$
 $$</p>
 <p>Recall derivatives of a smooth function
 $f \colon \mathbb{R} \to \mathbb{R}$ can be computed by finding the
-limit $$
+limit
+$$
 f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta}).
-$$ We can use the <em>finite difference method</em> which computes an
+$$
+We can use the <em>finite difference method</em> which computes an
 approximation to derivatives through replacing the limiting process by
-taking a small value for $\Delta x$: $$
+taking a small value for $\Delta x$:
+$$
 \text{approx} = \frac{f(x + \Delta x) - f(x)}{\Delta}).
 $$</p>
 <p>Write code to approximate the derivative using finite differences of
@@ -7656,12 +7659,15 @@ the best value.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Exercise-3:">Exercise 3:<a class="anchor-link" href="#Exercise-3:">¶</a></h2><p>The <a href="https://en.wikipedia.org/wiki/Basel_problem">Basel problem</a> is the
-problem of finding the sum: $$
+problem of finding the sum:
+$$
 \sum_{n=1}^\infty \frac{1}{n^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6} \approx 1.644934
 $$</p>
-<p>Write Python code to find the sum above replaced by the partial sum: $$
+<p>Write Python code to find the sum above replaced by the partial sum:
+$$
 S_N = \sum_{n=1}^N \frac{1}{n^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots + \frac{1}{N^2}.
-$$ Compute the values of $S_{10^7}$, $S_{10^8}$ and $S_{10^9}$ and
+$$
+Compute the values of $S_{10^7}$, $S_{10^8}$ and $S_{10^9}$ and
 compute absolute errors to $\pi^2/6$.</p>
 <p>How do the errors change if you reverse and instead start for the
 largest values of $n$ in the sum? Why?</p>
@@ -7693,13 +7699,16 @@ largest values of $n$ in the sum? Why?</p>
 of polygons inscribing and circumscribing a circle of diameter 1.
 Starting with the hexagon and successively doubling the number of sides,
 we have the recurrence formula for the side length in the circumscribed
-polygon, at step $n+1$, $$
+polygon, at step $n+1$,
+$$
 \begin{aligned}
-p_{n+1} &amp; = \frac{ \sqrt{p_n^2+1} - 1 }{ p_n } &amp;&amp; \mbox{ for } n=0,1,2,\ldots \\
+p_{n+1} &amp; = \frac{ \sqrt{p_n^2+1} - 1 }{ p_n } &amp;&amp; \text{ for } n=0,1,2,\ldots \\
 p_0 &amp; = \frac{1}{\sqrt{3}}.
 \end{aligned}
-$$ Thus $\pi$ can be found as a limit, noticing that the number of sides
-is $6 \cdot 2^n$, $$
+$$
+Thus $\pi$ can be found as a limit, noticing that the number of sides
+is $6 \cdot 2^n$,
+$$
 \pi = \lim_{n \to \infty} 6 \cdot 2^n \cdot p_n = 3.141592653589793\ldots 
 $$</p>
 <p>We can use this iteration to write code to compute $\pi$ using:</p>
