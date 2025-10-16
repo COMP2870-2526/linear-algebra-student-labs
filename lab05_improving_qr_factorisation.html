@@ -7516,7 +7516,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_header" data-mime-type="text/markdown">
 <h2 id="Theoretical-Foundations-of-Computer-Science-II-COMP2870">Theoretical Foundations of Computer Science II COMP2870<a class="anchor-link" href="#Theoretical-Foundations-of-Computer-Science-II-COMP2870">¶</a></h2><p><strong>School of Computer Science, University of Leeds</strong></p>
 <h1 id="Lab05:-Improving-QR-factorisation">Lab05: Improving QR factorisation<a class="anchor-link" href="#Lab05:-Improving-QR-factorisation">¶</a></h1><p>These labsheets contains <em>formative activities</em> (which contribute to your learning) and <em>summative activities</em> (which you will complete and submit to be assessed as part of your portfolio).</p>
 <div class="alert alert-block alert-danger">
@@ -7553,23 +7553,9 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_header" data-mime-type="text/markdown">
 <h2 id="How-to-access-the-lab">How to access the lab<a class="anchor-link" href="#How-to-access-the-lab">¶</a></h2><p>You can access the lab worksheet directly through <a href="https://minerva.leeds.ac.uk/">minerva</a>, <a href="https://github.com/COMP2870-2526/linear-algebra-student-labs">github</a> or using Noteable (accessible via Minerva - see <code>README.md</code> for detailed instructions).</p>
 <p>These lab worksheets are written using <a href="https://jupyter.org/">'Jupyter Notebooks'</a>. Many, many tutorials and guides are <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">available online</a>.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=796a8ea0-041f-48db-91b6-2ed6eff92c95">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7579,7 +7565,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_portfolio" data-mime-type="text/markdown">
 <h2 id="Exercise-1:-Problems-with-QR-factorisation">Exercise 1: Problems with QR factorisation<a class="anchor-link" href="#Exercise-1:-Problems-with-QR-factorisation">¶</a></h2><div class="alert alert-block alert-danger">
 <b>Portfolio exercise</b>
 You should submit:
@@ -7620,7 +7606,7 @@ where $\| . \|_2$ is a norm on matrices than can be computed using <code>np.lina
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_formative" data-mime-type="text/markdown">
 <h2 id="Exercise-2:-Improving-the-QR-with-Gram-Schmidt-approach">Exercise 2: Improving the QR with Gram Schmidt approach<a class="anchor-link" href="#Exercise-2:-Improving-the-QR-with-Gram-Schmidt-approach">¶</a></h2><p>In this exercise, we will improve our implementation of
 <code>gram_schmidt_eigen</code>.</p>
 <p>Implement <em>one</em> of the following improvements and see how the change the
@@ -7676,14 +7662,14 @@ $$</li>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_formative" data-mime-type="text/markdown">
 <p>Test your solution by finding the eigenvalues and eigenvectors of 10 randomly created symmetric matrices of sizes $n = 2, 4, 8, 16, 32$. Comment on what you find.</p>
 <p>For the method for the lectures and each approach you implement, make a table of problem size, average (mean) time taken, average QR iterations and maximum error as implemented by the <code>test_accuracy_of_eigensolve</code> function.</p>
 <p>How could you improve the variation of the method further in order to improve the convergence?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6bbfa112-a3c2-472c-8b3e-000ee96f300c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_formative" id="cell-id=6bbfa112-a3c2-472c-8b3e-000ee96f300c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7727,7 +7713,7 @@ $$</li>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput celltag_formative" data-mime-type="text/markdown">
 <p>If you have time, implement one or more additional updates again
 comparing using the test cases from the lecture notes.</p>
 </div>
