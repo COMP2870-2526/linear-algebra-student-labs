@@ -8,18 +8,11 @@ You can also use the *Noteable compute service*. To access Noteable, navigate in
 
 ![](img/noteable-in-minerva.jpg).
 
-This opens the Noteable interface. Choose "Standard Python 3 with VS code editor" from the drop down list in the Green box then select start:
+This opens the Noteable interface. Choose "Standard Python 3" from the drop down list in the Green box then select start:
 
 ![](img/noteable-1.jpg)
 
-Then from the Launcher menu select "Python 3 kernel (ipython)" (yellow box) or "VSCode IDE" (green box):
-
-![](img/noteable-2.jpg)
-
-Python 3 kernel is a standard jupyter lab interface that requires no set up. 
-VSCode IDE brings up online VS Code editor, very similar to github class rooms, which requires some additional set up to work.
-
-You can access the lab notebooks in the directory "shared-data-202526_41390_COMP2870". Ensure that you copy the files
+You can access the lab notebooks in the directory "shared-data-202526_41390_COMP2870". **Ensure that you copy the files to the directory you started from.** This copy of the files is persistent and won't be deleted at the end of your session.
 
 The [Noteable user guide](https://noteable.edina.ac.uk/user-guide/) provides more information.
 
